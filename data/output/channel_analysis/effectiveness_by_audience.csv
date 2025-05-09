@@ -1,0 +1,31 @@
+Channel_Used,Target_Audience,Conversion_Rate,ROI,Campaign_ID
+Email,All Ages,0.079,4.964,6755
+Email,Men 18-24,0.081,4.988,6772
+Email,Men 25-34,0.08,5.007,6700
+Email,Women 25-34,0.08,5.01,6653
+Email,Women 35-44,0.081,5.015,6719
+Facebook,All Ages,0.08,5.033,6617
+Facebook,Men 18-24,0.081,4.96,6727
+Facebook,Men 25-34,0.08,5.059,6365
+Facebook,Women 25-34,0.08,5.011,6634
+Facebook,Women 35-44,0.08,5.034,6476
+Google Ads,All Ages,0.08,5.022,6674
+Google Ads,Men 18-24,0.08,5.009,6658
+Google Ads,Men 25-34,0.081,5.031,6807
+Google Ads,Women 25-34,0.08,4.966,6643
+Google Ads,Women 35-44,0.08,4.987,6656
+Instagram,All Ages,0.08,4.999,6671
+Instagram,Men 18-24,0.08,4.958,6763
+Instagram,Men 25-34,0.079,4.994,6644
+Instagram,Women 25-34,0.08,5.007,6635
+Instagram,Women 35-44,0.08,4.986,6679
+Website,All Ages,0.08,5.027,6645
+Website,Men 18-24,0.08,4.998,6661
+Website,Men 25-34,0.08,5.039,6743
+Website,Women 25-34,0.08,4.999,6750
+Website,Women 35-44,0.08,5.008,6561
+Youtube,All Ages,0.08,4.987,6657
+Youtube,Men 18-24,0.08,4.985,6677
+Youtube,Men 25-34,0.08,4.996,6764
+Youtube,Women 25-34,0.08,4.992,6698
+Youtube,Women 35-44,0.08,5.01,6596

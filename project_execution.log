@@ -1,0 +1,790 @@
+2025-05-08 22:55:28,008 - __main__ - INFO - Setting up virtual environment...
+2025-05-08 22:55:53,963 - __main__ - INFO - Successfully ran: python -m venv venv
+2025-05-08 22:55:54,143 - __main__ - INFO - Successfully ran: venv\Scripts\activate
+2025-05-08 22:56:32,089 - __main__ - ERROR - Command failed: pip install -r requirements.txt
+2025-05-08 22:56:32,089 - __main__ - ERROR - Error: 
+[notice] A new release of pip is available: 25.0.1 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+ERROR: Exception:
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\base_command.py", line 106, in _run_wrapper
+    status = _inner_run()
+             ^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\base_command.py", line 97, in _inner_run
+    return self.run(options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\req_command.py", line 67, in wrapper
+    return func(self, options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\commands\install.py", line 386, in run
+    requirement_set = resolver.resolve(
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+    result = self._result = resolver.resolve(
+                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+    state = resolution.resolve(requirements, max_rounds=max_rounds)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+    self._add_to_criteria(self.state.criteria, r, parent=None)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers.py", line 173, in _add_to_criteria
+    if not criterion.candidates:
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\structs.py", line 156, in __bool__
+    return bool(self._sequence)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 174, in __bool__
+    return any(self)
+           ^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 162, in <genexpr>
+    return (c for c in iterator if id(c) not in self._incompatible_ids)
+                       ^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 53, in _iter_built
+    candidate = func()
+                ^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 187, in _make_candidate_from_link
+    base: Optional[BaseCandidate] = self._make_base_candidate_from_link(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 233, in _make_base_candidate_from_link
+    self._link_candidate_cache[link] = LinkCandidate(
+                                       ^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 304, in __init__
+    super().__init__(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 159, in __init__
+    self.dist = self._prepare()
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 236, in _prepare
+    dist = self._prepare_distribution()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 315, in _prepare_distribution
+    return preparer.prepare_linked_requirement(self._ireq, parallel_builds=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 527, in prepare_linked_requirement
+    return self._prepare_linked_requirement(req, parallel_builds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 642, in _prepare_linked_requirement
+    dist = _get_prepared_distribution(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 72, in _get_prepared_distribution
+    abstract_dist.prepare_distribution_metadata(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 56, in prepare_distribution_metadata
+    self._install_build_reqs(finder)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 126, in _install_build_reqs
+    build_reqs = self._get_build_requires_wheel()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 103, in _get_build_requires_wheel
+    return backend.get_requires_for_build_wheel()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\utils\misc.py", line 702, in get_requires_for_build_wheel
+    return super().get_requires_for_build_wheel(config_settings=cs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\pyproject_hooks\_impl.py", line 196, in get_requires_for_build_wheel
+    return self._call_hook(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\pyproject_hooks\_impl.py", line 402, in _call_hook
+    raise BackendUnavailable(
+pip._vendor.pyproject_hooks._impl.BackendUnavailable: Cannot import 'setuptools.build_meta'
+
+2025-05-08 22:56:32,090 - __main__ - ERROR - Error running command pip install -r requirements.txt: Command 'pip install -r requirements.txt' returned non-zero exit status 2.
+2025-05-08 22:56:32,090 - __main__ - ERROR - Project execution failed: Command 'pip install -r requirements.txt' returned non-zero exit status 2.
+2025-05-08 22:59:17,113 - __main__ - INFO - Setting up virtual environment...
+2025-05-08 22:59:17,668 - __main__ - ERROR - Command failed: python -m venv venv
+2025-05-08 22:59:17,669 - __main__ - ERROR - Error: Error: [Errno 13] Permission denied: 'C:\\Users\\hp\\Desktop\\Albert_School\\MSC2\\Mkg_campaign_analytics\\marketing_campaign_project\\venv\\Scripts\\python.exe'
+
+2025-05-08 22:59:17,669 - __main__ - ERROR - Error running command python -m venv venv: Command 'python -m venv venv' returned non-zero exit status 1.
+2025-05-08 22:59:17,669 - __main__ - ERROR - Project execution failed: Command 'python -m venv venv' returned non-zero exit status 1.
+2025-05-08 23:02:15,285 - __main__ - INFO - Installing project dependencies...
+2025-05-08 23:02:33,907 - __main__ - INFO - Successfully ran: python -m pip install --upgrade pip
+2025-05-08 23:03:01,271 - __main__ - INFO - Successfully ran: pip install --upgrade setuptools wheel
+2025-05-08 23:03:06,421 - __main__ - INFO - Successfully ran: pip install --upgrade build
+2025-05-08 23:03:22,763 - __main__ - ERROR - Command failed: pip install -r requirements.txt
+2025-05-08 23:03:22,763 - __main__ - ERROR - Error: ERROR: Exception:
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\base_command.py", line 105, in _run_wrapper
+    status = _inner_run()
+             ^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\base_command.py", line 96, in _inner_run
+    return self.run(options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\req_command.py", line 68, in wrapper
+    return func(self, options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\commands\install.py", line 387, in run
+    requirement_set = resolver.resolve(
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 96, in resolve
+    result = self._result = resolver.resolve(
+                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers\resolution.py", line 515, in resolve
+    state = resolution.resolve(requirements, max_rounds=max_rounds)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers\resolution.py", line 388, in resolve
+    self._add_to_criteria(self.state.criteria, r, parent=None)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers\resolution.py", line 141, in _add_to_criteria
+    if not criterion.candidates:
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\structs.py", line 194, in __bool__
+    return bool(self._sequence)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 163, in __bool__
+    self._bool = any(self)
+                 ^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 147, in <genexpr>
+    return (c for c in iterator if id(c) not in self._incompatible_ids)
+                       ^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 37, in _iter_built
+    candidate = func()
+                ^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 187, in _make_candidate_from_link
+    base: Optional[BaseCandidate] = self._make_base_candidate_from_link(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 233, in _make_base_candidate_from_link
+    self._link_candidate_cache[link] = LinkCandidate(
+                                       ^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 306, in __init__
+    super().__init__(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 159, in __init__
+    self.dist = self._prepare()
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 236, in _prepare
+    dist = self._prepare_distribution()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 317, in _prepare_distribution
+    return preparer.prepare_linked_requirement(self._ireq, parallel_builds=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 532, in prepare_linked_requirement
+    return self._prepare_linked_requirement(req, parallel_builds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 647, in _prepare_linked_requirement
+    dist = _get_prepared_distribution(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 71, in _get_prepared_distribution
+    abstract_dist.prepare_distribution_metadata(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 56, in prepare_distribution_metadata
+    self._install_build_reqs(finder)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 126, in _install_build_reqs
+    build_reqs = self._get_build_requires_wheel()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 103, in _get_build_requires_wheel
+    return backend.get_requires_for_build_wheel()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\utils\misc.py", line 702, in get_requires_for_build_wheel
+    return super().get_requires_for_build_wheel(config_settings=cs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\pyproject_hooks\_impl.py", line 196, in get_requires_for_build_wheel
+    return self._call_hook(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\pyproject_hooks\_impl.py", line 402, in _call_hook
+    raise BackendUnavailable(
+pip._vendor.pyproject_hooks._impl.BackendUnavailable: Cannot import 'setuptools.build_meta'
+
+2025-05-08 23:03:22,763 - __main__ - ERROR - Error running command pip install -r requirements.txt: Command 'pip install -r requirements.txt' returned non-zero exit status 2.
+2025-05-08 23:03:22,764 - __main__ - WARNING - Bulk requirement installation failed. Trying individual installation...
+2025-05-08 23:03:39,046 - __main__ - ERROR - Command failed: pip install numpy==1.24.3
+2025-05-08 23:03:39,046 - __main__ - ERROR - Error: ERROR: Exception:
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\base_command.py", line 105, in _run_wrapper
+    status = _inner_run()
+             ^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\base_command.py", line 96, in _inner_run
+    return self.run(options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\req_command.py", line 68, in wrapper
+    return func(self, options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\commands\install.py", line 387, in run
+    requirement_set = resolver.resolve(
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 96, in resolve
+    result = self._result = resolver.resolve(
+                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers\resolution.py", line 515, in resolve
+    state = resolution.resolve(requirements, max_rounds=max_rounds)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers\resolution.py", line 388, in resolve
+    self._add_to_criteria(self.state.criteria, r, parent=None)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\resolvers\resolution.py", line 141, in _add_to_criteria
+    if not criterion.candidates:
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\resolvelib\structs.py", line 194, in __bool__
+    return bool(self._sequence)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 163, in __bool__
+    self._bool = any(self)
+                 ^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 147, in <genexpr>
+    return (c for c in iterator if id(c) not in self._incompatible_ids)
+                       ^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 37, in _iter_built
+    candidate = func()
+                ^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 187, in _make_candidate_from_link
+    base: Optional[BaseCandidate] = self._make_base_candidate_from_link(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 233, in _make_base_candidate_from_link
+    self._link_candidate_cache[link] = LinkCandidate(
+                                       ^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 306, in __init__
+    super().__init__(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 159, in __init__
+    self.dist = self._prepare()
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 236, in _prepare
+    dist = self._prepare_distribution()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 317, in _prepare_distribution
+    return preparer.prepare_linked_requirement(self._ireq, parallel_builds=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 532, in prepare_linked_requirement
+    return self._prepare_linked_requirement(req, parallel_builds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 647, in _prepare_linked_requirement
+    dist = _get_prepared_distribution(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\operations\prepare.py", line 71, in _get_prepared_distribution
+    abstract_dist.prepare_distribution_metadata(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 56, in prepare_distribution_metadata
+    self._install_build_reqs(finder)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 126, in _install_build_reqs
+    build_reqs = self._get_build_requires_wheel()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\distributions\sdist.py", line 103, in _get_build_requires_wheel
+    return backend.get_requires_for_build_wheel()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_internal\utils\misc.py", line 702, in get_requires_for_build_wheel
+    return super().get_requires_for_build_wheel(config_settings=cs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\pyproject_hooks\_impl.py", line 196, in get_requires_for_build_wheel
+    return self._call_hook(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\pip\_vendor\pyproject_hooks\_impl.py", line 402, in _call_hook
+    raise BackendUnavailable(
+pip._vendor.pyproject_hooks._impl.BackendUnavailable: Cannot import 'setuptools.build_meta'
+
+2025-05-08 23:03:39,046 - __main__ - ERROR - Error running command pip install numpy==1.24.3: Command 'pip install numpy==1.24.3' returned non-zero exit status 2.
+2025-05-08 23:03:39,047 - __main__ - ERROR - Failed to install numpy==1.24.3: Command 'pip install numpy==1.24.3' returned non-zero exit status 2.
+2025-05-08 23:03:39,047 - __main__ - ERROR - Project execution failed: Command 'pip install numpy==1.24.3' returned non-zero exit status 2.
+2025-05-08 23:05:19,980 - __main__ - INFO - Installing project dependencies...
+2025-05-08 23:05:24,520 - __main__ - INFO - Successfully ran: python -m pip install --upgrade pip
+2025-05-08 23:05:30,217 - __main__ - INFO - Successfully ran: pip install --upgrade setuptools wheel
+2025-05-08 23:05:34,429 - __main__ - INFO - Successfully ran: pip install --upgrade build
+2025-05-08 23:13:35,027 - __main__ - INFO - Successfully ran: pip install -r requirements.txt
+2025-05-08 23:13:35,029 - __main__ - INFO - Setting up dashboard environment...
+2025-05-08 23:13:35,030 - __main__ - INFO - Running analysis pipeline...
+2025-05-08 23:14:02,402 - __main__ - ERROR - Command failed: python src/run_analysis.py
+2025-05-08 23:14:02,403 - __main__ - ERROR - Error: INFO:__main__:Created directory: data/processed
+INFO:__main__:Created directory: data/output/cohort_analysis
+INFO:__main__:Created directory: data/output/segment_analysis
+INFO:__main__:Created directory: data/output/channel_analysis
+INFO:__main__:Created directory: docs/images
+INFO:__main__:Starting data loading and cleaning...
+INFO:data.data_loader:Loading data from data\raw\marketing_campaign_dataset.csv
+ERROR:data.data_loader:Missing required columns: {'Conversions', 'Device_Type', 'End_Date', 'Channel', 'Cost_per_Conversion', 'Geographic_Region', 'Creative_Type', 'Budget', 'Start_Date'}
+ERROR:data.data_loader:Data validation failed
+ERROR:__main__:Error in analysis pipeline: Failed to load raw data
+ERROR:__main__:Failed to run analysis pipeline: Failed to load raw data
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\run_analysis.py", line 106, in <module>
+    main() 
+    ^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\run_analysis.py", line 100, in main
+    run_analysis_pipeline()
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\run_analysis.py", line 47, in run_analysis_pipeline
+    raise ValueError("Failed to load raw data")
+ValueError: Failed to load raw data
+
+2025-05-08 23:14:02,404 - __main__ - ERROR - Error running command python src/run_analysis.py: Command 'python src/run_analysis.py' returned non-zero exit status 1.
+2025-05-08 23:14:02,404 - __main__ - ERROR - Error in analysis: Command 'python src/run_analysis.py' returned non-zero exit status 1.
+2025-05-08 23:14:02,404 - __main__ - ERROR - Project execution failed: Command 'python src/run_analysis.py' returned non-zero exit status 1.
+2025-05-08 23:21:04,345 - __main__ - INFO - Installing project dependencies...
+2025-05-08 23:21:39,671 - __main__ - INFO - Successfully ran: python -m pip install --upgrade pip
+2025-05-08 23:22:13,596 - __main__ - INFO - Successfully ran: pip install --upgrade setuptools wheel
+2025-05-08 23:22:22,598 - __main__ - INFO - Successfully ran: pip install --upgrade build
+2025-05-08 23:35:18,834 - __main__ - INFO - Successfully ran: pip install -r requirements.txt
+2025-05-08 23:35:18,834 - __main__ - INFO - Setting up dashboard environment...
+2025-05-08 23:35:18,834 - __main__ - INFO - Running analysis pipeline...
+2025-05-08 23:35:59,432 - __main__ - INFO - Successfully ran: python src/run_analysis.py
+2025-05-08 23:36:05,609 - __main__ - ERROR - Command failed: python src/compile_whitepaper.py
+2025-05-08 23:36:05,609 - __main__ - ERROR - Error: ERROR:__main__:Error compiling whitepaper: Unknown format code 'f' for object of type 'str'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\compile_whitepaper.py", line 271, in <module>
+    main() 
+    ^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\compile_whitepaper.py", line 268, in main
+    compiler.compile_whitepaper()
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\compile_whitepaper.py", line 240, in compile_whitepaper
+    self.generate_executive_summary(results),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\compile_whitepaper.py", line 95, in generate_executive_summary
+    - Total Budget Utilized: ${summary['total_budget']:,.2f}
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unknown format code 'f' for object of type 'str'
+
+2025-05-08 23:36:05,613 - __main__ - ERROR - Error running command python src/compile_whitepaper.py: Command 'python src/compile_whitepaper.py' returned non-zero exit status 1.
+2025-05-08 23:36:05,614 - __main__ - ERROR - Error in analysis: Command 'python src/compile_whitepaper.py' returned non-zero exit status 1.
+2025-05-08 23:36:05,618 - __main__ - ERROR - Project execution failed: Command 'python src/compile_whitepaper.py' returned non-zero exit status 1.
+2025-05-08 23:38:00,595 - __main__ - INFO - Setting up dashboard environment...
+2025-05-08 23:38:00,597 - __main__ - INFO - Running analysis pipeline...
+2025-05-08 23:38:29,963 - __main__ - INFO - Successfully ran: python src/run_analysis.py
+2025-05-08 23:38:35,707 - __main__ - ERROR - Command failed: python src/compile_whitepaper.py
+2025-05-08 23:38:35,707 - __main__ - ERROR - Error: ERROR:__main__:Error compiling whitepaper: Unknown format code 'f' for object of type 'str'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\compile_whitepaper.py", line 271, in <module>
+    main() 
+    ^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\compile_whitepaper.py", line 268, in main
+    compiler.compile_whitepaper()
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\compile_whitepaper.py", line 240, in compile_whitepaper
+    self.generate_executive_summary(results),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\compile_whitepaper.py", line 95, in generate_executive_summary
+    - Total Budget Utilized: ${summary['total_budget']:,.2f}
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unknown format code 'f' for object of type 'str'
+
+2025-05-08 23:38:35,707 - __main__ - ERROR - Error running command python src/compile_whitepaper.py: Command 'python src/compile_whitepaper.py' returned non-zero exit status 1.
+2025-05-08 23:38:35,707 - __main__ - ERROR - Error in analysis: Command 'python src/compile_whitepaper.py' returned non-zero exit status 1.
+2025-05-08 23:38:35,708 - __main__ - ERROR - Project execution failed: Command 'python src/compile_whitepaper.py' returned non-zero exit status 1.
+2025-05-08 23:40:46,753 - __main__ - INFO - Setting up dashboard environment...
+2025-05-08 23:40:46,756 - __main__ - INFO - Running analysis pipeline...
+2025-05-08 23:40:57,045 - __main__ - INFO - Successfully ran: python src/run_analysis.py
+2025-05-08 23:41:01,804 - __main__ - INFO - Successfully ran: python src/compile_whitepaper.py
+2025-05-08 23:41:01,805 - __main__ - INFO - Analysis completed successfully
+2025-05-08 23:41:01,805 - __main__ - INFO - Starting dashboard server...
+2025-05-08 23:41:02,985 - __main__ - ERROR - Command failed: npm start
+2025-05-08 23:41:02,986 - __main__ - ERROR - Error: npm error code ENOENT
+npm error syscall open
+npm error path C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\dashboard\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\dashboard\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\hp\AppData\Local\npm-cache\_logs\2025-05-08T21_41_02_535Z-debug-0.log
+
+2025-05-08 23:41:02,986 - __main__ - ERROR - Error running command npm start: Command 'npm start' returned non-zero exit status 4294963238.
+2025-05-08 23:41:02,986 - __main__ - ERROR - Error starting dashboard: Command 'npm start' returned non-zero exit status 4294963238.
+2025-05-08 23:41:02,986 - __main__ - ERROR - Project execution failed: Command 'npm start' returned non-zero exit status 4294963238.
+2025-05-09 00:14:02,845 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:14:02,846 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:14:02,846 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:14:02,846 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:14:02,847 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:14:02,847 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:14:02,847 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:14:02,847 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:14:02,847 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:14:02,847 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:14:02,847 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:14:02,847 - __main__ - INFO - Generating sample data...
+2025-05-09 00:14:07,363 - __main__ - ERROR - Error generating sample data: Command '['C:\\Python312\\python.exe', 'src/data/generate_sample_data.py']' returned non-zero exit status 1.
+2025-05-09 00:14:07,364 - __main__ - ERROR - Project pipeline failed: Command '['C:\\Python312\\python.exe', 'src/data/generate_sample_data.py']' returned non-zero exit status 1.
+2025-05-09 00:14:48,041 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:14:48,042 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:14:48,043 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:14:48,043 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:14:48,043 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:14:48,044 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:14:48,044 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:14:48,044 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:14:48,046 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:14:48,047 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:14:48,052 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:14:48,052 - __main__ - INFO - Generating sample data...
+2025-05-09 00:14:53,878 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:14:53,879 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:14:53,879 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:14:53,880 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:14:53,881 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:14:53,882 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:14:53,882 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:14:53,883 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:14:53,883 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:14:53,883 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:14:53,884 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:14:53,884 - __main__ - INFO - Generating sample data...
+2025-05-09 00:14:53,891 - __main__ - INFO - Sample data generation completed successfully
+2025-05-09 00:14:53,893 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:14:55,342 - __main__ - INFO - Sample data generation completed successfully
+2025-05-09 00:14:55,342 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:14:55,393 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:14:55,394 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:14:55,396 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:14:55,397 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:14:55,397 - __main__ - ERROR - Error in analysis: name 'run_command' is not defined
+2025-05-09 00:14:55,398 - __main__ - ERROR - Project pipeline failed: name 'run_command' is not defined
+2025-05-09 00:14:56,674 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:14:56,674 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:14:56,675 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:14:56,675 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:14:56,675 - __main__ - ERROR - Error in analysis: name 'run_command' is not defined
+2025-05-09 00:14:56,675 - __main__ - ERROR - Project pipeline failed: name 'run_command' is not defined
+2025-05-09 00:16:28,499 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:16:28,500 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:16:28,501 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:16:28,502 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:16:28,504 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:16:28,510 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:16:28,516 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:16:28,517 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:16:28,518 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:16:28,519 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:16:28,523 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:16:28,524 - __main__ - INFO - Generating sample data...
+2025-05-09 00:16:31,111 - __main__ - INFO - Sample data generation completed successfully
+2025-05-09 00:16:31,111 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:16:32,300 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:16:32,301 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:16:32,301 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:16:32,301 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:16:33,999 - __main__ - ERROR - Command failed: C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py
+2025-05-09 00:16:33,999 - __main__ - ERROR - Error: Analysis error: [Errno 2] No such file or directory: 'data/processed/marketing_campaign_processed.csv'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\analysis\run_analysis.py", line 31, in <module>
+    run_analysis()
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\analysis\run_analysis.py", line 12, in run_analysis
+    data = pd.read_csv('data/processed/marketing_campaign_processed.csv')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/marketing_campaign_processed.csv'
+
+2025-05-09 00:16:34,011 - __main__ - ERROR - Error in analysis: Command 'C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py' returned non-zero exit status 1.
+2025-05-09 00:16:34,013 - __main__ - ERROR - Project pipeline failed: Command 'C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py' returned non-zero exit status 1.
+2025-05-09 00:16:44,826 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:16:44,832 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:16:44,844 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:16:44,844 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:16:44,844 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:16:44,845 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:16:44,845 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:16:44,846 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:16:44,846 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:16:44,847 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:16:44,849 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:16:44,849 - __main__ - INFO - Generating sample data...
+2025-05-09 00:16:46,065 - __main__ - INFO - Sample data generation completed successfully
+2025-05-09 00:16:46,066 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:16:47,529 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:16:47,530 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:16:47,531 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:16:47,531 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:16:49,379 - __main__ - INFO - Successfully ran: C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py
+2025-05-09 00:16:49,379 - __main__ - INFO - Analysis completed successfully
+2025-05-09 00:16:49,380 - __main__ - INFO - Starting dashboard server...
+2025-05-09 00:18:05,521 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:18:05,521 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:18:05,522 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:18:05,522 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:18:05,523 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:18:05,523 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:18:05,523 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:18:05,523 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:18:05,524 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:18:05,524 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:18:05,525 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:18:05,525 - __main__ - INFO - Generating sample data...
+2025-05-09 00:18:06,645 - __main__ - INFO - Sample data generation completed successfully
+2025-05-09 00:18:06,645 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:18:07,840 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:18:07,840 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:18:07,840 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:18:07,841 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:18:08,963 - __main__ - INFO - Successfully ran: C:\Python312\python.exe src/analysis/run_analysis.py
+2025-05-09 00:18:08,963 - __main__ - INFO - Analysis completed successfully
+2025-05-09 00:18:08,963 - __main__ - INFO - Starting dashboard server...
+2025-05-09 00:18:11,917 - __main__ - INFO - Successfully ran: npm start
+2025-05-09 00:18:11,917 - __main__ - INFO - 
+> dashboard@0.1.0 start
+> react-scripts start
+
+Something is already running on port 3000.
+
+2025-05-09 00:18:11,917 - __main__ - INFO - Project execution completed in 6.40 seconds
+2025-05-09 00:18:43,336 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:18:43,337 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:18:43,337 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:18:43,337 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:18:43,338 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:18:43,338 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:18:43,339 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:18:43,339 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:18:43,339 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:18:43,340 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:18:43,340 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:18:43,340 - __main__ - INFO - Generating sample data...
+2025-05-09 00:18:44,570 - __main__ - INFO - Sample data generation completed successfully
+2025-05-09 00:18:44,570 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:18:45,751 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:18:45,759 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:18:45,759 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:18:45,759 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:18:46,896 - __main__ - INFO - Successfully ran: C:\Python312\python.exe src/analysis/run_analysis.py
+2025-05-09 00:18:46,896 - __main__ - INFO - Analysis completed successfully
+2025-05-09 00:18:46,896 - __main__ - INFO - Starting dashboard server...
+2025-05-09 00:22:23,936 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:22:23,936 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:22:23,937 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:22:23,937 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:22:23,937 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:22:23,937 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:22:23,938 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:22:23,938 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:22:23,938 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:22:23,939 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:22:23,939 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:22:23,939 - __main__ - INFO - Generating sample data...
+2025-05-09 00:23:36,435 - __main__ - INFO - Created directory: data/raw
+2025-05-09 00:23:36,437 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:23:36,444 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:23:36,447 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:23:36,457 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:23:36,460 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:23:36,462 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:23:36,463 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:23:36,463 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:23:36,464 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:23:36,468 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:23:36,492 - __main__ - INFO - Using existing dataset from data/raw/marketing_campaign_dataset.csv
+2025-05-09 00:23:36,506 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:23:38,181 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:23:38,181 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:23:38,182 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:23:38,182 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:23:40,607 - __main__ - INFO - Successfully ran: C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py
+2025-05-09 00:23:40,607 - __main__ - INFO - Analysis completed successfully
+2025-05-09 00:23:40,611 - __main__ - INFO - Starting dashboard server...
+2025-05-09 00:28:32,916 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:28:32,917 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:28:32,917 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:28:32,917 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:28:32,918 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:28:32,918 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:28:32,918 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:28:32,918 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:28:32,919 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:28:32,919 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:28:32,919 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:28:34,355 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:28:34,355 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:28:34,356 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:28:34,356 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:28:35,818 - __main__ - INFO - Successfully ran: C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py
+2025-05-09 00:28:35,819 - __main__ - INFO - Analysis completed successfully
+2025-05-09 00:28:35,819 - __main__ - INFO - Starting dashboard server...
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:42:17,563 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:42:17,563 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:42:19,954 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:42:19,954 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:42:19,954 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:42:19,954 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:42:21,141 - __main__ - INFO - Successfully ran: C:\Python312\python.exe src/analysis/run_analysis.py
+2025-05-09 00:42:21,141 - __main__ - INFO - Analysis completed successfully
+2025-05-09 00:42:21,141 - __main__ - INFO - Starting dashboard server...
+2025-05-09 00:42:24,752 - __main__ - INFO - Successfully ran: npm start
+2025-05-09 00:42:24,752 - __main__ - INFO - 
+> dashboard@0.1.0 start
+> react-scripts start
+
+Something is already running on port 3000.
+
+2025-05-09 00:42:24,752 - __main__ - INFO - Project execution completed in 7.19 seconds
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:42:42,181 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:42:42,181 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:42:43,793 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:42:43,793 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:42:43,793 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:42:43,793 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:42:44,889 - __main__ - INFO - Successfully ran: C:\Python312\python.exe src/analysis/run_analysis.py
+2025-05-09 00:42:44,889 - __main__ - INFO - Analysis completed successfully
+2025-05-09 00:42:44,889 - __main__ - INFO - Starting dashboard server...
+2025-05-09 00:44:17,411 - __main__ - INFO - Created directory: data/processed
+2025-05-09 00:44:17,412 - __main__ - INFO - Created directory: data/output
+2025-05-09 00:44:17,412 - __main__ - INFO - Created directory: notebooks
+2025-05-09 00:44:17,412 - __main__ - INFO - Created directory: src/data
+2025-05-09 00:44:17,412 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 00:44:17,413 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 00:44:17,413 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 00:44:17,413 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 00:44:17,414 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 00:44:17,414 - __main__ - INFO - Created directory: docs/images
+2025-05-09 00:44:17,414 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 00:44:19,228 - __main__ - INFO - Data processing completed successfully
+2025-05-09 00:44:19,228 - __main__ - INFO - Setting up dashboard...
+2025-05-09 00:44:19,228 - __main__ - INFO - Dashboard data is ready
+2025-05-09 00:44:19,228 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 00:44:20,403 - __main__ - INFO - Successfully ran: C:\Python312\python.exe src/analysis/run_analysis.py
+2025-05-09 00:44:20,404 - __main__ - INFO - Analysis completed successfully
+2025-05-09 00:44:20,404 - __main__ - INFO - Starting dashboard server...
+2025-05-09 01:00:43,072 - __main__ - INFO - Created directory: data/processed
+2025-05-09 01:00:43,072 - __main__ - INFO - Created directory: data/output
+2025-05-09 01:00:43,073 - __main__ - INFO - Created directory: notebooks
+2025-05-09 01:00:43,074 - __main__ - INFO - Created directory: src/data
+2025-05-09 01:00:43,074 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 01:00:43,075 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 01:00:43,075 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 01:00:43,075 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 01:00:43,075 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 01:00:43,076 - __main__ - INFO - Created directory: docs/images
+2025-05-09 01:00:43,076 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 01:00:47,865 - __main__ - INFO - Data processing completed successfully
+2025-05-09 01:00:47,865 - __main__ - INFO - Setting up dashboard...
+2025-05-09 01:00:47,866 - __main__ - INFO - Dashboard data is ready
+2025-05-09 01:00:47,866 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 01:00:48,958 - __main__ - INFO - Successfully ran: C:\Python312\python.exe src/analysis/run_analysis.py
+2025-05-09 01:00:48,958 - __main__ - INFO - Analysis completed successfully
+2025-05-09 01:00:48,958 - __main__ - INFO - Starting dashboard server...
+2025-05-09 01:02:49,458 - __main__ - INFO - Created directory: data/processed
+2025-05-09 01:02:49,458 - __main__ - INFO - Created directory: data/output
+2025-05-09 01:02:49,458 - __main__ - INFO - Created directory: notebooks
+2025-05-09 01:02:49,458 - __main__ - INFO - Created directory: src/data
+2025-05-09 01:02:49,458 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 01:02:49,458 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 01:02:49,458 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 01:02:49,466 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 01:02:49,466 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 01:02:49,468 - __main__ - INFO - Created directory: docs/images
+2025-05-09 01:02:49,468 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 01:02:51,497 - __main__ - INFO - Data processing completed successfully
+2025-05-09 01:02:51,497 - __main__ - INFO - Setting up dashboard...
+2025-05-09 01:02:51,497 - __main__ - INFO - Dashboard data is ready
+2025-05-09 01:02:51,497 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 01:02:52,601 - __main__ - INFO - Successfully ran: C:\Python312\python.exe src/analysis/run_analysis.py
+2025-05-09 01:02:52,601 - __main__ - INFO - Analysis completed successfully
+2025-05-09 01:02:52,602 - __main__ - INFO - Starting dashboard server...
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: data/processed
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: data/output
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: notebooks
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: src/data
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 01:26:08,517 - __main__ - INFO - Created directory: docs/images
+2025-05-09 01:26:08,517 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 01:26:09,713 - __main__ - INFO - Data processing completed successfully
+2025-05-09 01:26:09,713 - __main__ - INFO - Setting up dashboard...
+2025-05-09 01:26:09,714 - __main__ - INFO - Dashboard data is ready
+2025-05-09 01:26:09,714 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 01:26:11,006 - __main__ - ERROR - Command failed: C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py
+2025-05-09 01:26:11,006 - __main__ - ERROR - Error: Analysis error: 'Revenue'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Revenue'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\analysis\run_analysis.py", line 31, in <module>
+    run_analysis()
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\analysis\run_analysis.py", line 19, in run_analysis
+    'total_revenue': data['Revenue'].sum(),
+                     ~~~~^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Revenue'
+
+2025-05-09 01:26:11,006 - __main__ - ERROR - Error in analysis: Command 'C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py' returned non-zero exit status 1.
+2025-05-09 01:26:11,022 - __main__ - ERROR - Project pipeline failed: Command 'C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py' returned non-zero exit status 1.
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: data/processed
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: data/output
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: notebooks
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: src/data
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 01:27:34,056 - __main__ - INFO - Created directory: docs/images
+2025-05-09 01:27:34,056 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 01:27:41,636 - __main__ - INFO - Data processing completed successfully
+2025-05-09 01:27:41,636 - __main__ - INFO - Setting up dashboard...
+2025-05-09 01:27:41,637 - __main__ - INFO - Dashboard data is ready
+2025-05-09 01:27:41,637 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 01:27:43,891 - __main__ - ERROR - Command failed: C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py
+2025-05-09 01:27:43,891 - __main__ - ERROR - Error: Analysis error: 'Revenue'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Revenue'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\analysis\run_analysis.py", line 31, in <module>
+    run_analysis()
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\src\analysis\run_analysis.py", line 19, in run_analysis
+    'total_revenue': data['Revenue'].sum(),
+                     ~~~~^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Revenue'
+
+2025-05-09 01:27:43,903 - __main__ - ERROR - Error in analysis: Command 'C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py' returned non-zero exit status 1.
+2025-05-09 01:27:43,904 - __main__ - ERROR - Project pipeline failed: Command 'C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py' returned non-zero exit status 1.
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: data/processed
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: data/output
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: notebooks
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: src/data
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: src/analysis
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: src/visualization
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: dashboard/css
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: dashboard/js
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: dashboard/data
+2025-05-09 01:50:44,655 - __main__ - INFO - Created directory: docs/images
+2025-05-09 01:50:44,655 - __main__ - INFO - Processing marketing campaign data...
+2025-05-09 01:50:51,220 - __main__ - INFO - Data processing completed successfully
+2025-05-09 01:50:51,220 - __main__ - INFO - Setting up dashboard...
+2025-05-09 01:50:51,221 - __main__ - INFO - Dashboard data is ready
+2025-05-09 01:50:51,221 - __main__ - INFO - Running analysis pipeline...
+2025-05-09 01:50:53,536 - __main__ - INFO - Successfully ran: C:\Users\hp\Desktop\Albert_School\MSC2\Mkg_campaign_analytics\marketing_campaign_project\venv\Scripts\python.exe src/analysis/run_analysis.py
+2025-05-09 01:50:53,536 - __main__ - INFO - Analysis completed successfully
+2025-05-09 01:50:53,536 - __main__ - INFO - Starting dashboard server...

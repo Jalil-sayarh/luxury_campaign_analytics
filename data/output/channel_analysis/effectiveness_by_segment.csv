@@ -1,0 +1,31 @@
+Channel_Used,Customer_Segment,Conversion_Rate,ROI,Engagement_Score,Campaign_ID
+Email,Fashionistas,0.08,4.988,5.503,6784
+Email,Foodies,0.08,4.992,5.494,6828
+Email,Health & Wellness,0.08,5.022,5.48,6576
+Email,Outdoor Adventurers,0.081,4.971,5.454,6673
+Email,Tech Enthusiasts,0.08,5.011,5.507,6738
+Facebook,Fashionistas,0.08,5.005,5.535,6487
+Facebook,Foodies,0.08,5.01,5.464,6618
+Facebook,Health & Wellness,0.08,5.007,5.51,6590
+Facebook,Outdoor Adventurers,0.08,5.023,5.495,6508
+Facebook,Tech Enthusiasts,0.08,5.05,5.515,6616
+Google Ads,Fashionistas,0.079,5.03,5.489,6717
+Google Ads,Foodies,0.082,4.97,5.526,6746
+Google Ads,Health & Wellness,0.08,5.02,5.48,6705
+Google Ads,Outdoor Adventurers,0.081,5.004,5.494,6647
+Google Ads,Tech Enthusiasts,0.079,4.992,5.482,6623
+Instagram,Fashionistas,0.08,5.01,5.452,6593
+Instagram,Foodies,0.08,4.998,5.513,6688
+Instagram,Health & Wellness,0.079,4.969,5.458,6658
+Instagram,Outdoor Adventurers,0.08,4.993,5.5,6744
+Instagram,Tech Enthusiasts,0.08,4.973,5.522,6709
+Website,Fashionistas,0.08,5.021,5.504,6560
+Website,Foodies,0.081,5.033,5.552,6698
+Website,Health & Wellness,0.08,5.015,5.466,6554
+Website,Outdoor Adventurers,0.08,5.009,5.57,6748
+Website,Tech Enthusiasts,0.081,4.993,5.451,6800
+Youtube,Fashionistas,0.08,4.952,5.456,6601
+Youtube,Foodies,0.08,5.024,5.519,6630
+Youtube,Health & Wellness,0.08,4.988,5.511,6805
+Youtube,Outdoor Adventurers,0.079,4.996,5.504,6691
+Youtube,Tech Enthusiasts,0.081,5.008,5.434,6665

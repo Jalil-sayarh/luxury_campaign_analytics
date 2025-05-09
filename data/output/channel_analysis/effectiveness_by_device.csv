@@ -1,0 +1,5 @@
+Channel,Device_Type,Conversion_Rate,ROI,Campaign_ID
+Display,All,0.03,2.8,1
+Email,Desktop,0.04,3.0,1
+Search,All,0.05,4.2,1
+Social Media,Mobile,0.04,3.75,2

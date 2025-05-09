@@ -1,0 +1,31 @@
+Channel_Used,Campaign_Type,Conversion_Rate,ROI,Campaign_ID
+Email,Display,0.08,5.031,6701
+Email,Email,0.08,5.003,6760
+Email,Influencer,0.081,4.991,6698
+Email,Search,0.08,4.973,6718
+Email,Social Media,0.081,4.985,6722
+Facebook,Display,0.08,5.001,6628
+Facebook,Email,0.08,5.012,6589
+Facebook,Influencer,0.08,5.027,6548
+Facebook,Search,0.08,5.033,6488
+Facebook,Social Media,0.08,5.022,6566
+Google Ads,Display,0.08,5.003,6590
+Google Ads,Email,0.08,5.011,6689
+Google Ads,Influencer,0.08,5.002,6764
+Google Ads,Search,0.081,5.005,6720
+Google Ads,Social Media,0.08,4.994,6675
+Instagram,Display,0.08,4.97,6724
+Instagram,Email,0.08,4.991,6640
+Instagram,Influencer,0.08,4.998,6736
+Instagram,Search,0.08,5.007,6623
+Instagram,Social Media,0.08,4.978,6669
+Website,Display,0.08,5.031,6622
+Website,Email,0.08,4.991,6611
+Website,Influencer,0.08,5.025,6650
+Website,Search,0.08,5.032,6899
+Website,Social Media,0.08,4.991,6578
+Youtube,Display,0.08,5.003,6722
+Youtube,Email,0.079,4.957,6581
+Youtube,Influencer,0.08,5.024,6773
+Youtube,Search,0.08,5.0,6709
+Youtube,Social Media,0.08,4.983,6607

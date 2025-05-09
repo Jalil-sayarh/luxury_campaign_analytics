@@ -1,0 +1,31 @@
+Target_Audience,Channel_Used,Conversion_Rate,ROI,Engagement_Score,Campaign_ID
+All Ages,Email,0.079,4.964,5.482,6755
+All Ages,Facebook,0.08,5.033,5.473,6617
+All Ages,Google Ads,0.08,5.022,5.525,6674
+All Ages,Instagram,0.08,4.999,5.467,6671
+All Ages,Website,0.08,5.027,5.495,6645
+All Ages,Youtube,0.08,4.987,5.481,6657
+Men 18-24,Email,0.081,4.988,5.532,6772
+Men 18-24,Facebook,0.081,4.96,5.468,6727
+Men 18-24,Google Ads,0.08,5.009,5.527,6658
+Men 18-24,Instagram,0.08,4.958,5.558,6763
+Men 18-24,Website,0.08,4.998,5.527,6661
+Men 18-24,Youtube,0.08,4.985,5.478,6677
+Men 25-34,Email,0.08,5.007,5.537,6700
+Men 25-34,Facebook,0.08,5.059,5.548,6365
+Men 25-34,Google Ads,0.081,5.031,5.448,6807
+Men 25-34,Instagram,0.079,4.994,5.439,6644
+Men 25-34,Website,0.08,5.039,5.502,6743
+Men 25-34,Youtube,0.08,4.996,5.482,6764
+Women 25-34,Email,0.08,5.01,5.442,6653
+Women 25-34,Facebook,0.08,5.011,5.503,6634
+Women 25-34,Google Ads,0.08,4.966,5.496,6643
+Women 25-34,Instagram,0.08,5.007,5.48,6635
+Women 25-34,Website,0.08,4.999,5.528,6750
+Women 25-34,Youtube,0.08,4.992,5.507,6698
+Women 35-44,Email,0.081,5.015,5.446,6719
+Women 35-44,Facebook,0.08,5.034,5.53,6476
+Women 35-44,Google Ads,0.08,4.987,5.475,6656
+Women 35-44,Instagram,0.08,4.986,5.5,6679
+Women 35-44,Website,0.08,5.008,5.492,6561
+Women 35-44,Youtube,0.08,5.01,5.477,6596

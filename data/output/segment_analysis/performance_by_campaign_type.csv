@@ -1,0 +1,26 @@
+Target_Audience,Campaign_Type,Conversion_Rate,ROI,Engagement_Score,Campaign_ID
+All Ages,Display,0.08,5.016,5.498,7926
+All Ages,Email,0.08,5.031,5.525,7897
+All Ages,Influencer,0.08,5.007,5.47,8232
+All Ages,Search,0.08,4.99,5.451,8032
+All Ages,Social Media,0.08,4.981,5.492,7932
+Men 18-24,Display,0.08,5.005,5.489,8119
+Men 18-24,Email,0.08,4.976,5.545,8012
+Men 18-24,Influencer,0.08,4.978,5.48,8195
+Men 18-24,Search,0.08,4.995,5.526,7965
+Men 18-24,Social Media,0.081,4.959,5.537,7967
+Men 25-34,Display,0.081,4.983,5.556,7927
+Men 25-34,Email,0.08,5.013,5.447,7930
+Men 25-34,Influencer,0.08,5.018,5.495,8135
+Men 25-34,Search,0.08,5.044,5.441,8076
+Men 25-34,Social Media,0.08,5.043,5.522,7955
+Women 25-34,Display,0.079,4.992,5.496,8040
+Women 25-34,Email,0.08,4.991,5.463,8018
+Women 25-34,Influencer,0.08,5.045,5.489,7809
+Women 25-34,Search,0.08,4.987,5.565,8098
+Women 25-34,Social Media,0.079,4.974,5.451,8048
+Women 35-44,Display,0.08,5.036,5.491,7975
+Women 35-44,Email,0.079,4.96,5.518,8013
+Women 35-44,Influencer,0.081,5.008,5.482,7798
+Women 35-44,Search,0.079,5.026,5.453,7986
+Women 35-44,Social Media,0.081,5.002,5.488,7915

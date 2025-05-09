@@ -1,0 +1,61 @@
+Cohort_Month,Customer_Segment,Campaign_ID,Conversion_Rate,ROI,Engagement_Score
+2021-01,Fashionistas,3337,0.079,5.005,5.479
+2021-01,Foodies,3342,0.081,5.056,5.44
+2021-01,Health & Wellness,3457,0.081,5.001,5.421
+2021-01,Outdoor Adventurers,3335,0.081,4.979,5.428
+2021-01,Tech Enthusiasts,3517,0.079,5.031,5.507
+2021-02,Fashionistas,2944,0.081,5.012,5.525
+2021-02,Foodies,3119,0.079,5.03,5.52
+2021-02,Health & Wellness,3164,0.08,4.958,5.46
+2021-02,Outdoor Adventurers,3054,0.08,5.005,5.525
+2021-02,Tech Enthusiasts,3063,0.082,5.022,5.49
+2021-03,Fashionistas,3459,0.081,4.97,5.528
+2021-03,Foodies,3445,0.08,4.961,5.552
+2021-03,Health & Wellness,3315,0.08,4.994,5.462
+2021-03,Outdoor Adventurers,3353,0.08,4.975,5.577
+2021-03,Tech Enthusiasts,3416,0.079,5.017,5.482
+2021-04,Fashionistas,3333,0.08,5.048,5.43
+2021-04,Foodies,3348,0.081,4.976,5.431
+2021-04,Health & Wellness,3346,0.08,4.995,5.511
+2021-04,Outdoor Adventurers,3248,0.08,4.972,5.483
+2021-04,Tech Enthusiasts,3165,0.081,4.979,5.482
+2021-05,Fashionistas,3306,0.08,5.032,5.541
+2021-05,Foodies,3474,0.079,4.977,5.574
+2021-05,Health & Wellness,3298,0.079,5.025,5.529
+2021-05,Outdoor Adventurers,3452,0.081,5.04,5.491
+2021-05,Tech Enthusiasts,3458,0.08,5.022,5.515
+2021-06,Fashionistas,3285,0.081,4.983,5.484
+2021-06,Foodies,3243,0.08,4.98,5.508
+2021-06,Health & Wellness,3288,0.08,5.01,5.527
+2021-06,Outdoor Adventurers,3326,0.08,4.997,5.493
+2021-06,Tech Enthusiasts,3298,0.08,4.957,5.505
+2021-07,Fashionistas,3434,0.079,4.963,5.431
+2021-07,Foodies,3402,0.081,5.03,5.455
+2021-07,Health & Wellness,3343,0.08,4.989,5.519
+2021-07,Outdoor Adventurers,3452,0.08,4.968,5.576
+2021-07,Tech Enthusiasts,3357,0.08,4.966,5.512
+2021-08,Fashionistas,3333,0.079,4.988,5.514
+2021-08,Foodies,3447,0.08,4.968,5.514
+2021-08,Health & Wellness,3359,0.079,5.038,5.472
+2021-08,Outdoor Adventurers,3402,0.079,5.006,5.416
+2021-08,Tech Enthusiasts,3447,0.08,4.99,5.448
+2021-09,Fashionistas,3355,0.079,4.996,5.473
+2021-09,Foodies,3259,0.08,5.048,5.587
+2021-09,Health & Wellness,3209,0.081,5.019,5.507
+2021-09,Outdoor Adventurers,3294,0.08,5.021,5.556
+2021-09,Tech Enthusiasts,3323,0.081,5.062,5.553
+2021-10,Fashionistas,3343,0.079,5.047,5.452
+2021-10,Foodies,3357,0.08,5.001,5.486
+2021-10,Health & Wellness,3447,0.08,4.988,5.424
+2021-10,Outdoor Adventurers,3425,0.08,5.025,5.52
+2021-10,Tech Enthusiasts,3416,0.08,5.022,5.406
+2021-11,Fashionistas,3255,0.08,4.976,5.444
+2021-11,Foodies,3339,0.081,5.015,5.475
+2021-11,Health & Wellness,3249,0.081,4.997,5.444
+2021-11,Outdoor Adventurers,3265,0.08,4.994,5.473
+2021-11,Tech Enthusiasts,3332,0.08,5.014,5.449
+2021-12,Fashionistas,3358,0.079,4.995,5.582
+2021-12,Foodies,3433,0.081,5.016,5.594
+2021-12,Health & Wellness,3413,0.08,5.022,5.536
+2021-12,Outdoor Adventurers,3405,0.081,5.009,5.494
+2021-12,Tech Enthusiasts,3359,0.08,4.968,5.475

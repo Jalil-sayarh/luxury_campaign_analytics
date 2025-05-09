@@ -1,0 +1,11 @@
+,Conversion_Rate_anova,ROI_anova,Engagement_Score_anova,correlations
+f_statistic,0.579,1.548,0.369,
+p_value,0.716,0.171,0.87,
+significant,False,False,False,
+Impressions,,,,"{'Impressions': 1.0, 'Clicks': 0.0, 'Conversion_Rate': -0.003, 'ROI': 0.002, 'Acquisition_Cost': 0.0, 'Engagement_Score': 0.003, 'Engagement_Rate': -0.658}"
+Clicks,,,,"{'Impressions': 0.0, 'Clicks': 1.0, 'Conversion_Rate': 0.0, 'ROI': -0.002, 'Acquisition_Cost': 0.0, 'Engagement_Score': -0.002, 'Engagement_Rate': 0.507}"
+Conversion_Rate,,,,"{'Impressions': -0.003, 'Clicks': 0.0, 'Conversion_Rate': 1.0, 'ROI': -0.001, 'Acquisition_Cost': 0.001, 'Engagement_Score': -0.001, 'Engagement_Rate': -0.0}"
+ROI,,,,"{'Impressions': 0.002, 'Clicks': -0.002, 'Conversion_Rate': -0.001, 'ROI': 1.0, 'Acquisition_Cost': 0.005, 'Engagement_Score': 0.001, 'Engagement_Rate': -0.002}"
+Acquisition_Cost,,,,"{'Impressions': 0.0, 'Clicks': 0.0, 'Conversion_Rate': 0.001, 'ROI': 0.005, 'Acquisition_Cost': 1.0, 'Engagement_Score': -0.003, 'Engagement_Rate': -0.001}"
+Engagement_Score,,,,"{'Impressions': 0.003, 'Clicks': -0.002, 'Conversion_Rate': -0.001, 'ROI': 0.001, 'Acquisition_Cost': -0.003, 'Engagement_Score': 1.0, 'Engagement_Rate': -0.006}"
+Engagement_Rate,,,,"{'Impressions': -0.658, 'Clicks': 0.507, 'Conversion_Rate': -0.0, 'ROI': -0.002, 'Acquisition_Cost': -0.001, 'Engagement_Score': -0.006, 'Engagement_Rate': 1.0}"

@@ -1,0 +1,247 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor AI Rules Document: Marketing Campaign Analytics Project
+
+## Project Structure
+
+```
+marketing_campaign_project/
+├── data/
+│   ├── raw/                         # Raw dataset files
+│   │   └── marketing_campaign_dataset.csv
+│   ├── processed/                   # Cleaned and transformed data
+│   │   └── cleaned_campaign_data.csv
+│   └── output/                      # Analysis outputs
+│       ├── segment_analysis.csv
+│       ├── channel_performance.csv
+│       └── cohort_results.csv
+├── notebooks/
+│   ├── 01_data_exploration.ipynb    # Initial EDA
+│   ├── 02_data_cleaning.ipynb       # Data preparation
+│   ├── 03_cohort_analysis.ipynb     # Cohort analysis
+│   ├── 04_segment_analysis.ipynb    # Customer segment analysis
+│   └── 05_visualization_prep.ipynb  # Prepare data for dashboard
+├── src/
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── data_loader.py           # Functions to load and validate data
+│   │   └── data_cleaner.py          # Functions to clean and transform data
+│   ├── analysis/
+│   │   ├── __init__.py
+│   │   ├── cohort_analysis.py       # Cohort analysis functions
+│   │   ├── segment_analysis.py      # Segment analysis functions
+│   │   └── channel_analysis.py      # Channel performance functions
+│   └── visualization/
+│       ├── __init__.py
+│       └── plot_utils.py            # Reusable plotting functions
+├── dashboard/
+│   ├── index.html                   # Main dashboard page
+│   ├── css/
+│   │   └── style.css                # Dashboard styling
+│   ├── js/
+│   │   ├── main.js                  # Core dashboard logic
+│   │   ├── charts.js                # Chart creation functions
+│   │   └── interactions.js          # User interaction handlers
+│   └── data/
+│       └── dashboard_data.json      # Preprocessed data for visualization
+├── docs/
+│   ├── whitepaper.md                # Whitepaper markdown
+│   ├── whitepaper.pdf               # Compiled whitepaper
+│   └── images/                      # Visualizations for whitepaper
+├── requirements.txt                 # Project dependencies
+├── README.md                        # Project overview
+└── .gitignore                       # Git ignore file
+```
+
+## Data Processing Rules
+
+1. **Data Loading**
+   - Always validate CSV structure before processing
+   - Check for expected columns (all 16 must be present)
+   - Validate data types match expected types
+   - Report any issues before proceeding
+
+2. **Data Cleaning**
+   - Convert date strings to datetime objects
+   - Handle any missing values appropriately:
+     - For numerical fields: Use median for Clicks, Impressions, Engagement_Score
+     - For categorical fields: Create "Unknown" category
+   - Remove duplicate Campaign_IDs if any exist
+   - Convert percentage strings to floats (Conversion_Rate, ROI)
+   - Format currency fields consistently (Acquisition_Cost)
+
+3. **Data Transformation**
+   - Create additional time-based features (month, quarter, year)
+   - Categorize campaigns by duration (short, medium, long)
+   - Bin numerical metrics into meaningful categories where appropriate
+   - Create segment-channel combinations for cross-analysis
+
+4. **Analysis Patterns**
+   - Use pandas GroupBy operations for aggregations
+   - Apply cohort analysis techniques using first interaction date
+   - Implement RFM segmentation logic correctly
+   - Calculate statistical significance for campaign comparisons
+   - Use at least 2 analytical techniques from class material
+
+## Visualization Development Rules
+
+1. **Data Preparation for Visualization**
+   - Create aggregated, preprocessed data files
+   - Limit JSON size to improve performance
+   - Precompute statistics rather than calculating in browser
+   - Include metadata and dimension descriptions
+
+2. **Dashboard Design**
+   - Use responsive design practices
+   - Implement a cohesive color scheme based on business domain
+   - Ensure accessibility (contrast, text size, screen reader compatibility)
+   - Provide clear navigation between insights
+   - Include filters for interactive exploration
+
+3. **Chart Implementation**
+   - Use D3.js for custom visualizations
+   - Implement smooth transitions and animations
+   - Ensure all charts have proper titles, labels, and legends
+   - Include tooltips with additional context
+   - Make charts responsive to window size
+
+4. **Interaction Features**
+   - Implement cross-filtering between visualizations
+   - Add drill-down capabilities for exploring segments
+   - Include time-based animations for temporal patterns
+   - Create hover states that reveal additional insights
+   - Add export functionality for charts
+
+## Code Quality Rules
+
+1. **General Practices**
+   - Use consistent naming conventions (snake_case for Python, camelCase for JavaScript)
+   - Add comprehensive docstrings to all functions
+   - Include type hints in Python code
+   - Create modular, reusable functions
+   - Keep functions focused on single responsibilities
+
+2. **Python Specific**
+   - Follow PEP 8 style guidelines
+   - Use pandas efficiently (vectorized operations)
+   - Implement error handling with try/except blocks
+   - Use logger instead of print statements
+   - Create utility functions for repeated operations
+
+3. **JavaScript Specific**
+   - Use ES6+ syntax
+   - Implement proper event handling
+   - Avoid global variables
+   - Use promises or async/await for data loading
+   - Implement proper error handling
+
+4. **Testing Guidelines**
+   - Create unit tests for critical data processing functions
+   - Test edge cases for data cleaning
+   - Validate visualization output against expected results
+   - Test dashboard on multiple browsers
+   - Verify mobile responsiveness
+
+## Whitepaper Development Rules
+
+1. **Content Structure**
+   - Follow the approved outline exactly
+   - Maintain consistent heading hierarchy
+   - Include page breaks at appropriate locations
+   - Number all figures and tables
+   - Include citations for all analytical methods
+
+2. **Visualization Integration**
+   - Create high-resolution static versions of interactive charts
+   - Include captions that explain key insights
+   - Ensure consistency between dashboard and whitepaper visuals
+   - Add QR code linking to interactive dashboard
+
+3. **Language Guidelines**
+   - Write for a non-technical audience
+   - Define all marketing and technical terms
+   - Use active voice
+   - Keep sentences concise and clear
+   - Include "Key Insight" callout boxes for important findings
+
+4. **Formatting Rules**
+   - Use consistent font family and sizes
+   - Apply proper spacing between sections
+   - Use bullet points for lists
+   - Include page numbers
+   - Add running headers with section names
+
+## Bug Prevention Checklists
+
+### Data Processing Checklist
+- [ ] Validated all column data types
+- [ ] Checked for and handled missing values
+- [ ] Verified date parsing logic works for all formats
+- [ ] Confirmed numerical calculations produce expected results
+- [ ] Tested with sample data before full dataset
+
+### Dashboard Development Checklist
+- [ ] Tested all filters and interactions
+- [ ] Verified charts render correctly with different data subsets
+- [ ] Confirmed responsive behavior on different screen sizes
+- [ ] Checked browser compatibility (Chrome, Firefox, Safari, Edge)
+- [ ] Verified data consistency between visualizations
+
+### Whitepaper Production Checklist
+- [ ] Confirmed all sections from outline are included
+- [ ] Verified all images render properly
+- [ ] Checked for formatting consistency
+- [ ] Validated all cross-references
+- [ ] Ensured all figures and tables are properly numbered and referenced
+
+## Final Delivery Requirements
+
+1. **Code Delivery**
+   - Well-documented Python notebooks with markdown explanations
+   - Clean, commented source code
+   - Requirements.txt with exact package versions
+   - README with setup instructions
+
+2. **Dashboard Delivery**
+   - Standalone HTML/CSS/JS implementation
+   - Bundled with all dependencies
+   - Testing instructions
+   - Performance optimizations documented
+
+3. **Whitepaper Delivery**
+   - Properly formatted PDF document (10+ pages)
+   - Executive summary
+   - Complete methodology section
+   - Findings with visualizations
+   - Strategic recommendations
+   - Appendix with technical details
+
+## Implementation Timeline Guide
+
+1. **Week 1: Data Processing and Initial Analysis**
+   - Set up project structure
+   - Load and clean data
+   - Perform exploratory analysis
+   - Develop initial insights
+
+2. **Week 2: Advanced Analysis and Visualization Prep**
+   - Complete cohort analysis
+   - Perform segment analysis
+   - Analyze channel performance
+   - Prepare data for dashboard
+
+3. **Week 3: Dashboard Development**
+   - Design dashboard layout
+   - Implement core visualizations
+   - Add interactive features
+   - Test and refine
+
+4. **Week 4: Whitepaper Creation and Final Delivery**
+   - Draft whitepaper content
+   - Integrate visualizations
+   - Review and refine
+
+   - Finalize all deliverables
