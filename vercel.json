@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "dashboard/build",
   "installCommand": "npm install",
   "framework": null,
   "functions": {
@@ -12,6 +12,6 @@
   },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/$1" }
   ]
 } 
