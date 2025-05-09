@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "npm install && (cd dashboard && npm install && npm run build)",
-    "vercel-build": "echo '--- VERCEL BUILD SCRIPT START ---' && echo 'Current PWD:' && pwd && echo 'Listing files in PWD:' && ls -la && echo '--- END DIAGNOSTICS ---' && npm install && (cd dashboard && npm install && npm run build)"
+    "build": "npm install && npm install --prefix ./dashboard && npm run build --prefix ./dashboard",
+    "vercel-build": "echo '--- VERCEL BUILD SCRIPT START ---' && echo 'Current PWD:' && pwd && echo 'Listing files in PWD:' && ls -la && echo '--- END DIAGNOSTICS ---' && npm install && npm install --prefix ./dashboard && npm run build --prefix ./dashboard"
   },
   "repository": {
     "type": "git",
