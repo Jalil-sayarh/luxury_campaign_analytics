@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "npm install && npm run build",
-  "outputDirectory": "dashboard/build",
-  "installCommand": "npm install && cd dashboard && npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "installCommand": "npm install",
   "framework": null,
   "functions": {
     "api/*.js": {
