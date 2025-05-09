@@ -33,11 +33,6 @@ htmlcov/
 .env.test.local
 .env.production.local
 
-# Build files
-dashboard/build/
-/dist/
-/build/
-*.tsbuildinfo
 
 # Logs
 logs
