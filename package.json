@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "cd dashboard && npm install && npm run build",
-    "vercel-build": "echo 'Building Server'"
+    "vercel-build": "cd dashboard && npm install && npm run build"
   },
   "repository": {
     "type": "git",
